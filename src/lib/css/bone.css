@@ -1,0 +1,678 @@
+/*------------------------------------------
+BONE.CSS ------------------------------
+BY: CHARLES FEBRYANTO ----------------------
+VERSION: 1.0.0 -----------------------------
+------------------------------------------*/
+@font-face {
+  font-family: "Raleway";
+  font-weight: 400;
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 300;
+  src: url("../fonts/Raleway-Light.ttf");
+}
+/*------------------------------------------
+BONE-GRID.CSS ------------------------------
+BY: CHARLES FEBRYANTO ----------------------
+VERSION: 1.0.0 -----------------------------
+------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row, .row-f {
+  width: 100%;
+}
+
+.row::before, .row-f::before, .row::after, .row-f::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row>.col-s-1:last-child, .row>.col-s-2:last-child, .row>.col-s-3:last-child, .row>.col-s-4:last-child, .row>.col-s-5:last-child, .row>.col-s-6:last-child, .row>.col-s-7:last-child, .row>.col-s-8:last-child, .row>.col-s-9:last-child, .row>.col-s-10:last-child, .row>.col-s-11:last-child, .row>.col-m-1:last-child, .row>.col-m-2:last-child, .row>.col-m-3:last-child, .row>.col-m-4:last-child, .row>.col-m-5:last-child, .row>.col-m-6:last-child, .row>.col-m-7:last-child, .row>.col-m-8:last-child, .row>.col-m-9:last-child, .row>.col-m-10:last-child, .row>.col-m-11:last-child, .row>.col-l-1:last-child, .row>.col-l-2:last-child, .row>.col-l-3:last-child, .row>.col-l-4:last-child, .row>.col-l-5:last-child, .row>.col-l-6:last-child, .row>.col-l-7:last-child, .row>.col-l-8:last-child, .row>.col-l-9:last-child, .row>.col-l-10:last-child, .row>.col-l-11:last-child {
+  margin-right: 0;
+}
+
+.row>.col-s-1, .row>.col-s-2, .row>.col-s-3, .row>.col-s-4, .row>.col-s-5, .row>.col-s-6, .row>.col-s-7, .row>.col-s-8, .row>.col-s-9, .row>.col-s-10, .row>.col-s-11, .row>.col-s-12, .row>.col-m-1, .row>.col-m-2, .row>.col-m-3, .row>.col-m-4, .row>.col-m-5, .row>.col-m-6, .row>.col-m-7, .row>.col-m-8, .row>.col-m-9, .row>.col-m-10, .row>.col-m-11, .row>.col-m-12, .row>.col-l-1, .row>.col-l-2, .row>.col-l-3, .row>.col-l-4, .row>.col-l-5, .row>.col-l-6, .row>.col-l-7, .row>.col-l-8, .row>.col-l-9, .row>.col-l-10, .row>.col-l-11, .row>.col-l-12, .row-f>.col-f-s-1, .row-f>.col-f-s-2, .row-f>.col-f-s-3, .row-f>.col-f-s-4, .row-f>.col-f-s-6, .row-f>.col-f-s-12, .row-f>.col-f-m-1, .row-f>.col-f-m-2, .row-f>.col-f-m-3, .row-f>.col-f-m-4, .row-f>.col-f-m-6, .row-f>.col-f-m-12, .row-f>.col-f-l-1, .row-f>.col-f-l-2, .row-f>.col-f-l-3, .row-f>.col-f-l-4, .row-f>.col-f-l-6, .row-f>.col-f-l-12 {
+  float: left;
+  width: 100%;
+  margin: 0 .5% .5% 0;
+}
+
+@media(min-width: 480px) {
+  .row>.col-s-1, .row-f>.col-f-s-1 {
+    width: 7.875%;
+  }
+  .row>.col-s-2, .row-f>.col-f-s-2 {
+    width: 16.25%;
+  }
+  .row>.col-s-3, .row-f>.col-f-s-3 {
+    width: 24.625%;
+  }
+  .row>.col-s-4, .row-f>.col-f-s-4 {
+    width: 33%;
+  }
+  .row>.col-s-5 {
+    width: 41.375%;
+  }
+  .row>.col-s-6, .row-f>.col-f-s-6 {
+    width: 49.75%;
+  }
+  .row>.col-s-7 {
+    width: 58.125%;
+  }
+  .row>.col-s-8 {
+    width: 66.5%;
+  }
+  .row>.col-s-9 {
+    width: 74.875%;
+  }
+  .row>.col-s-10 {
+    width: 83.25%;
+  }
+  .row>.col-s-11 {
+    width: 91.625%;
+  }
+  .row>.col-s-12, .row-f>.col-f-s-12 {
+    width: 100%;
+  }
+  .row-f>.col-f-s-1:nth-of-type(12n), .row-f>.col-f-s-2:nth-of-type(6n), .row-f>.col-f-s-3:nth-of-type(4n), .row-f>.col-f-s-4:nth-of-type(3n), .row-f>.col-f-s-6:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 768px) {
+  .row>.col-m-1, .row-f>.col-f-m-1 {
+    width: 7.875%;
+  }
+  .row>.col-m-2, .row-f>.col-f-m-2 {
+    width: 16.25%;
+  }
+  .row>.col-m-3, .row-f>.col-f-m-3 {
+    width: 24.625%;
+  }
+  .row>.col-m-4, .row-f>.col-f-m-4 {
+    width: 33%;
+  }
+  .row>.col-m-5 {
+    width: 41.375%;
+  }
+  .row>.col-m-6, .row-f>.col-f-m-6 {
+    width: 49.75%;
+  }
+  .row>.col-m-7 {
+    width: 58.125%;
+  }
+  .row>.col-m-8 {
+    width: 66.5%;
+  }
+  .row>.col-m-9 {
+    width: 74.875%;
+  }
+  .row>.col-m-10 {
+    width: 83.25%;
+  }
+  .row>.col-m-11 {
+    width: 91.625%;
+  }
+  .row>.col-m-12, .row-f>.col-f-m-12 {
+    width: 100%;
+  }
+  .row-f>.col-f-s-1:nth-of-type(12n), .row-f>.col-f-s-2:nth-of-type(6n), .row-f>.col-f-s-3:nth-of-type(4n), .row-f>.col-f-s-4:nth-of-type(3n), .row-f>.col-f-s-6:nth-of-type(2n) {
+    margin-right: .5%;
+  }
+  .row-f>.col-f-m-1:nth-of-type(12n), .row-f>.col-f-m-2:nth-of-type(6n), .row-f>.col-f-m-3:nth-of-type(4n), .row-f>.col-f-m-4:nth-of-type(3n), .row-f>.col-f-m-6:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 1024px) {
+  .row>.col-l-1, .row-f>.col-f-l-1 {
+    width: 7.875%;
+  }
+  .row>.col-l-2, .row-f>.col-f-l-2 {
+    width: 16.25%;
+  }
+  .row>.col-l-3, .row-f>.col-f-l-3 {
+    width: 24.625%;
+  }
+  .row>.col-l-4, .row-f>.col-f-l-4 {
+    width: 33%;
+  }
+  .row>.col-l-5 {
+    width: 41.375%;
+  }
+  .row>.col-l-6, .row-f>.col-f-l-6 {
+    width: 49.75%;
+  }
+  .row>.col-l-7 {
+    width: 58.125%;
+  }
+  .row>.col-l-8 {
+    width: 66.5%;
+  }
+  .row>.col-l-9 {
+    width: 74.875%;
+  }
+  .row>.col-l-10 {
+    width: 83.25%;
+  }
+  .row>.col-l-11 {
+    width: 91.625%;
+  }
+  .row>.col-l-12, .row-f>.col-f-l-12 {
+    width: 100%;
+  }
+  .row-f>.col-f-m-1:nth-of-type(12n), .row-f>.col-f-m-2:nth-of-type(6n), .row-f>.col-f-m-3:nth-of-type(4n), .row-f>.col-f-m-4:nth-of-type(3n), .row-f>.col-f-m-6:nth-of-type(2n) {
+    margin-right: .5%;
+  }
+  .row-f>.col-f-l-1:nth-of-type(12n), .row-f>.col-f-l-2:nth-of-type(6n), .row-f>.col-f-l-3:nth-of-type(4n), .row-f>.col-f-l-4:nth-of-type(3n), .row-f>.col-f-l-6:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+/*------------------------------------------
+BONE-STYLES.CSS ----------------------------
+BY: CHARLES FEBRYANTO ----------------------
+VERSION: 1.0.0 ---------------------------*/
+/*------------------------------------------
+DEFAULT ------------------------------------
+------------------------------------------*/
+body {
+  font-size: 16px;
+}
+
+body,
+textarea {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+    letter-spacing: .5px;
+    line-height: 1.5em;
+}
+
+/*------------------------------------------
+DEFAULT - BORDER RADIUS --------------------
+------------------------------------------*/
+form,
+select,
+fieldset,
+textarea,
+legend,
+button,
+input,
+.btn, .btn:link, .btn:visited {
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="radio"]:checked::after {
+  border-radius: 50%;
+}
+
+/*------------------------------------------
+DEFAULT - COLOR ----------------------------
+------------------------------------------*/
+body,
+textarea,
+select,
+button,
+input[type="button"],
+a {
+  color: #5e625b;
+}
+
+input:invalid {
+  color: #fff;
+}
+
+
+textarea:disabled,
+select:disabled,
+button:disabled,
+input[type="button"]:disabled,
+a.btn ~ a.disabled {
+  color: #ababab;
+}
+
+input:disabled::-webkit-input-placeholder {
+  color: #ababab;
+}
+
+input:disabled::-moz-placeholder {
+  color: #ababab;
+}
+
+input:disabled:-ms-input-placeholder {
+  color: #ababab;
+}
+
+input:disabled::placeholder {
+  color: #ababab;
+}
+/*------------------------------------------
+DEFAULT - BACKGROUND COLOR -----------------
+------------------------------------------*/
+form {
+background-color: #fff;
+}
+
+button,
+input[type="button"],
+.btn, .btn:link, .btn:visited,
+input[type="checkbox"],
+input[type="radio"] {
+  background-color: #c7c7c7;
+}
+
+input[type="radio"]:checked::after {
+  background-color: #5e625b;
+}
+
+button:hover,
+input[type="button"]:hover,
+a.btn:hover {
+  background-color: #b3b3b3;
+}
+
+button:active,
+input[type="button"]:active,
+a.btn:active {
+  background-color: #9f9f9f;
+}
+
+textarea:disabled,
+select:disabled,
+button:disabled,
+a.btn ~ a.disabled,
+input:disabled,
+input[type="button"]:disabled {
+  background-color: #dadcd8;
+}
+
+input:invalid {
+  background-color: #cb1d0f;
+}
+
+/*------------------------------------------
+DEFAULT - BORDER ---------------------------
+------------------------------------------*/
+input:invalid {
+  border-color: #cb1d0f;
+}
+
+fieldset,
+legend,
+textarea,
+select,
+input {
+    border: 1px solid #c7c7c7;
+}
+
+button,
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+.btn, .btn:link, .btn:visited {
+  border: 0;
+}
+
+select:disabled,
+button:disabled,
+a.btn ~ a.disabled,
+input:disabled,
+input[type="button"]:disabled {
+  border: 1px solid transparent;
+}
+
+/*------------------------------------------
+DEFAULT - PADDING --------------------------
+------------------------------------------*/
+form,
+legend,
+textarea,
+select,
+button,
+.btn, .btn:link, .btn:visited,
+input {
+  padding: 10px;
+}
+
+/*------------------------------------------
+DEFAULT - MARGIN ---------------------------
+------------------------------------------*/
+fieldset,
+input,
+label,
+textarea,
+select {
+  margin: 5px 0;
+}
+
+/*------------------------------------------
+DEFAULT - FONT SIZE ---------------------------
+------------------------------------------*/
+ul, ol, p,
+legend,
+textarea,
+button,
+input:not([type="checkbox"]),
+.btn, .btn:link, .btn:visited {
+  font-size: 1em;
+}
+
+/*------------------------------------------
+DEFAULT - ETC ------------------------------
+------------------------------------------*/
+textarea:disabled,
+select:disabled,
+input[type="button"]:disabled,
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+a.btn ~ a.disabled {
+  pointer-events: none;
+}
+
+select:focus,
+textarea:focus,
+button:focus,
+input[type="button"]:focus,
+input:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  width: 25%;
+  height: 100px;
+}
+
+input,
+textarea,
+label,
+select {
+  display: block;
+}
+
+button,
+input[type="button"],
+.btn, .btn:link, .btn:visited {
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+button,
+input[type="button"],
+.btn, .btn:link, .btn:visited,
+select {
+  cursor: pointer;
+}
+/*------------------------------------------
+CLASSES ------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+CLASS - FONT SIZE --------------------------
+------------------------------------------*/
+p.small,
+ul.small,
+ol.small,
+li.small,
+label.small,
+button.small,
+select.small,
+textarea.small,
+a.small, a.small:link, a.small:visited,
+legend.small,
+input:not([type="checkbox"]).small {
+  font-size: .85em;
+}
+
+p.medium,
+ul.medium,
+ol.medium,
+li.medium,
+label.medium,
+textarea.medium,
+button.medium,
+select.medium,
+a.medium, a.medium:link, a.medium:visited,
+legend.medium,
+input:not([type="checkbox"]).medium {
+  font-size: 1em;
+}
+
+p.large,
+ul.large,
+ol.large,
+li.large,
+label.large,
+textarea.large,
+button.large,
+select.large,
+a.large, a.large:link, a.large:visited,
+legend.large,
+input:not([type="checkbox"]).large {
+  font-size: 1.2em;
+}
+
+/*------------------------------------------
+CLASS - PADDING ----------------------------
+------------------------------------------*/
+textarea.small,
+button.small,
+select.small,
+a.small, a.small:link, a.small:visited,
+legend.small,
+input.small {
+  padding: 7.5px;
+}
+
+textarea.medium,
+button.medium,
+select.medium,
+a.medium, a.medium:link, a.medium:visited,
+legend.medium,
+input.medium {
+  padding: 10px;
+}
+
+textarea.large,
+button.large,
+select.large,
+a.large, a.large:link, a.large:visited,
+legend.large,
+input.large {
+  padding: 12.5px;
+}
+
+/*------------------------------------------
+CLASS - FONT WEIGHT ------------------------
+------------------------------------------*/
+.light {
+  font-weight: 300;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/*------------------------------------------
+CLASS - TEXT ALIGN -------------------------
+------------------------------------------*/
+p.left,
+legend.left,
+label.left {
+  text-align: left;
+}
+
+p.center,
+legend.center,
+label.center {
+  text-align: center;
+}
+
+p.right,
+legend.right,
+label.right {
+  text-align: right;
+}
+
+p.justify {
+  text-align: justify;
+}
+
+/*------------------------------------------
+CLASS - ETC ----------------------------
+------------------------------------------*/
+textarea.small {
+  width: 20%;
+  height: 75px;
+}
+textarea.medium {
+  width: 25%;
+  height: 100px;
+}
+textarea.large {
+  width: 30%;
+  height: 125px;
+}
+
+ul.disc {
+  list-style-type: disc;
+}
+
+ul.circle {
+  list-style-type: circle;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+ol.decimal {
+  list-style-type: decimal;
+}
+ol.alphabet {
+  list-style-type: upper-alpha;
+}
+ol.roman {
+  list-style-type: upper-roman;
+}
+
+
+
+
+/*------------------------------------------
+IMPORTANT ----------------------------------
+ALL THE PROPERTIES BELOW RELATED TO EACH ---
+OTHER, DO NOT CHANGE THE PROPERTIES, -------
+UNLESS YOU KNOW WHAT ARE YOU DOING ----------
+IMPORTANT ----------------------------------
+/*------------------------------------------
+CHECKBOX AND RADIO DEFAULT -----------------
+------------------------------------------*/
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  padding: 10px;
+}
+
+input[type="checkbox"].small,
+input[type="radio"].small {
+  padding: 7.5px;
+}
+
+input[type="checkbox"].medium,
+input[type="radio"].medium {
+  padding: 10px;
+}
+
+input[type="checkbox"].large,
+input[type="radio"].large {
+  padding: 12.5px;
+}
+
+
+input[type="checkbox"]:checked::after {
+  content: "\2714";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 1em;
+}
+
+input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+}
+/*------------------------------------------
+CHECKBOX -----------------------------------
+------------------------------------------*/
+input[type="checkbox"].small:checked::after {
+  font-size: .85em;
+  left: 3px;
+}
+
+input[type="checkbox"].medium:checked::after {
+  font-size: 1em;
+  left: 5px;
+}
+
+input[type="checkbox"].large:checked::after {
+  font-size: 1.2em;
+  left: 6px;
+}
+/*------------------------------------------
+RADIO --------------------------------------
+------------------------------------------*/
+input[type="radio"].small:checked::after {
+  width: 8.5px;
+  height: 8.5px;
+  top: 3px;
+  left: 3px;
+}
+input[type="radio"].medium:checked::after {
+  width: 12px;
+  height: 12px;
+  top: 4px;
+  left: 4px;
+}
+input[type="radio"].large:checked::after {
+  width: 14.5px;
+  height: 14.5px;
+  top: 5px;
+  left: 5px;
+}
